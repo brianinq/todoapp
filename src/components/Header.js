@@ -11,7 +11,7 @@ function Header() {
           <small>{moment().format("dddd, MMMM Do")}</small>
         </div>
         <div className="create">
-          <a href="#todo">
+          <a href="#new">
             <FontAwesomeIcon icon={faPenToSquare} size={"2xl"} />
           </a>
         </div>
