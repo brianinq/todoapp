@@ -5,7 +5,7 @@ body{
 .App{
   max-width: 700px;
   margin: 4rem auto;
-  background-color: #171321;
+  background-color: #000;
   color: #fff;
   padding: 30px;
 }
@@ -17,7 +17,6 @@ header{
 .create a{
     text-decoration: none;
     color: #fff;
-    /* #dad5e1 */
 }
 header small{
     color: #9d9d9d;
@@ -30,6 +29,7 @@ header small{
     background: #fff;
 }
 select{
+    font-size: 1rem;
     appearance: none;
     outline: none;
     border: none;
@@ -64,6 +64,7 @@ select{
 }
 form input{
     width: 80%;
+    font-size: 1rem;
 }
 
 form input,form button{
@@ -74,6 +75,7 @@ form input,form button{
 }
 form button{
     color: #000;
+    font-size: 1rem;
     cursor: pointer;
     background: #fff;
     transition: all 0.2s ease;
@@ -81,10 +83,11 @@ form button{
     
 }
 form button:hover{
-    background: #23074d;
+    background: #000;
     color: #fff;
 }
 .container{
+    margin-top: 50px;
     display: flex;
 }
 .container ul{
@@ -96,14 +99,19 @@ form button:hover{
     margin: 0.5rem 0;
     background: #ffffff;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease;
 }
 .todoItem li{
     padding: 0.5rem;
     flex: 1;
+}
+.todoItem.complete{
+    text-decoration: line-through;
+    opacity: 0.8;
 }
 .actionIcon{
     /* background: red; */
